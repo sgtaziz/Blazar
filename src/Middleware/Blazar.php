@@ -17,9 +17,9 @@ class Blazar
     public function handle($request, Closure $next)
     {
         // persist user login
-        if ($id = $request->header('user-id')) {
-            Auth::loginUsingId($id);
-        }
+        // if ($id = $request->header('user-id')) {
+        //     Auth::loginUsingId($id);
+        // }
 
         $response = $next($request);
 
